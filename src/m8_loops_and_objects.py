@@ -12,6 +12,7 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
 import rosegraphics as rg
 import math
 
+
 def main():
     """ Calls the other functions to demonstrate and/or test them. """
     # Test your functions by putting calls to them here:
@@ -120,7 +121,7 @@ def draw_circles2():
     print('--------------------------------------------------')
     print('Running draw_circles2:  See graphics window')
     print('--------------------------------------------------')
-    window = rg.RoseWindow( width=400, height=400)
+    window = rg.RoseWindow(width=400, height=400)
     for k in range(18):
         bluebois = rg.Circle(rg.Point(50 + (k * 20), 100), 10)
         bluebois.attach_to(window)
@@ -148,10 +149,11 @@ def print_sequence3():
     print('--------------------------------------------------')
     print('Running print_sequence3:')
     print('--------------------------------------------------')
-    k=0
+    k = 0
     for k in range(100):
-        q = (k+1)
+        q = (k + 1)
         print(q)
+
 
 def draw_circles3():
     """
@@ -172,10 +174,11 @@ def draw_circles3():
     print('--------------------------------------------------')
     window = rg.RoseWindow(width=300, height=300)
     for k in range(100):
-        chocolate = rg.Circle(rg.Point(200, 150), k+1)
+        chocolate = rg.Circle(rg.Point(200, 150), k + 1)
         chocolate.attach_to(window)
     window.render()
     window.close_on_mouse_click()
+
 
 def print_cosines():
     """
@@ -214,6 +217,7 @@ def print_cosines():
     for k in range(101):
         print(80 * math.cos(k))
 
+
 def draw_cosines_and_sines():
     """
     -- Constructs a window whose width and height are both 400.
@@ -243,6 +247,7 @@ def draw_cosines_and_sines():
         ben.attach_to(window)
     window.render()
     window.close_on_mouse_click()
+
 
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
