@@ -8,6 +8,7 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
 """  # DOnE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 import math
 
+
 def main():
     """ Calls the   TEST   functions in this module. """
     run_test_sum_cosines()
@@ -46,6 +47,7 @@ def run_test_sum_cosines():
     actual = sum_cosines(4)
     print("Test 3 expected:", expected)
     print("Test 3 actual:", actual)
+
 
 def sum_cosines(n):
     """
@@ -102,6 +104,7 @@ def run_test_sum_square_roots():
     print("Test 3 expected:", expected)
     print("Test 3 actual:", actual)
 
+
 def sum_square_roots(n):
     """
     What comes in:  A non-negative integer n.
@@ -125,8 +128,9 @@ def sum_square_roots(n):
     # -------------------------------------------------------------------------
     answer = 0
     for k in range(n):
-        answer += math.sqrt(2*(k+1))
+        answer += math.sqrt(2 * (k + 1))
     return answer
+
 
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
