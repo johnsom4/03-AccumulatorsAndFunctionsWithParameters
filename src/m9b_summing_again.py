@@ -66,7 +66,7 @@ def sum_powers(n, p):
     # -------------------------------------------------------------------------
     w = 0
     for k in range(n):
-        w = w + ((k+1)**p)
+        w = w + ((k + 1) ** p)
     return w
 
 
@@ -84,7 +84,7 @@ def run_test_sum_powers_in_range():
     print('--------------------------------------------------')
     print('Testing the   sum_powers_in_range   function:')
     print('--------------------------------------------------')
- # Test 1
+    # Test 1
     expected = 1295
     actual = sum_powers_in_range(2, 8, 3)
     print("Test 1 expected:", expected)
@@ -99,6 +99,7 @@ def run_test_sum_powers_in_range():
     actual = sum_powers_in_range(1, 5, 9)
     print("Test 3 expected:", expected)
     print("Test 3 actual:", actual)
+
 
 def sum_powers_in_range(m, n, p):
     """
@@ -120,9 +121,10 @@ def sum_powers_in_range(m, n, p):
     #   test cases; that would defeat the purpose of TESTING!
     # -------------------------------------------------------------------------
     r = 0
-    for k in range(m,n+1):
-        r = r + (k**p)
+    for k in range(m, n + 1):
+        r = r + (k ** p)
     return r
+
 
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
